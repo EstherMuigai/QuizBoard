@@ -10,18 +10,30 @@
     <body>
         <div class="container">
             <form id="details" class="jumbotron">
-                <div class="row">
+                <div class="row" id="names">
                     <div class="col">
-                        <input type="text" class="form-control" placeholder="Your name">
+                        <input type="text" class="form-control" placeholder="Your name" id="username" required>
                     </div>
                     <div class="col">
-                    <input type="text" class="form-control" placeholder="Your class">
+                    <input type="text" class="form-control" placeholder="Your class" id="userclass" required>
                     </div>
+                    <button type="submit" class="btn-success">SUBMIT</button>
                 </div>
-                <p id="rules"><strong>1. This quiz will test your understanding of the concepts we've learnt in JavaScript </br> 2. The time allocated for this test is 10 minutes. </br> 3. Undertake this quiz independently </br> 4. Finally,</br> ALL THE BEST!</strong></p>
-                <button type="submit" class="btn-success:hover">SUBMIT</button>
             </form>
-            <form id="quiz" class="jumbotron" class="form-group">
+            <form id="proceed" class="jumbotron">
+                    <div class="row">
+                            <img src="img/giphy.gif" alt="waving hi" id="giphy">
+                    </div></br>
+                    <div class="row">
+                        <p id="greeting"></p></br>
+                        <p id="rules"><strong>1. This quiz will test your understanding of the concepts we've learnt in JavaScript </br> 2. The time allocated for this test is 10 minutes. </br> 3. Undertake this quiz independently </br> 4. Finally,</br> ALL THE BEST!</strong></p></br>
+                    </div>
+                    <div class="row">
+                        <button type="submit" class="btn-success">PROCEED</button>
+                    </div>
+            </form>
+            <form id="quiz" class="jumbotron" class="form-group" class="col-md-3">
+                    <h1><strong>JS Quiz Board</strong></h1></br>
                 <div id="Q1">
                     <p>1. What does the abbreviation DOM stand for?</p>
                     <input type="radio" name='A1' value='5' required> Document Object Model</br>
@@ -49,6 +61,9 @@
                 <button type="submit" class="btn-success:hover">SUBMIT</button>
             </form>
             <div class="jumbotron" id="results">
+                    <img src="img/giphy1.gif" alt="passed" id="passed">
+                    <img src="img/giphy2.gif" alt="fairly" id="fairly">
+                    <img src="img/giphy3.gif" alt="passed" id="failed">
                     <p id="output"></p>
             </div>
         </div>
