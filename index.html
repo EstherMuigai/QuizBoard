@@ -5,11 +5,44 @@
         <link href="css/styles.css" rel="stylesheet" type="text/css">
         <script   src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
         <script src="js/scripts.js"></script>
-        <title>JS Quiz Board</title>
+        <title>JavaScript Quiz Board</title>
     </head>
     <body>
         <div class="container">
-
+            <form id="quiz" class="jumbotron" class="form-group">
+                <h1>JS Quiz Board</h1></br>
+                <p id="rules"><strong>1. This quiz will test your understanding of the concepts we've learnt in JavaScript </br> 2. The time allocated for this test is 10 minutes. </br> 3. Undertake this quiz independently </br> 4. Finally, ALL THE BEST!</strong></p>
+                <div class="details">
+                        <label for="name">Name: </label>
+                        <input type="text" class="form-control" id="username" placeholder="type your name here">
+                      </div></br>
+                <div id="Q1">
+                    <p>1. What does the abbreviation DOM stand for?</p>
+                    <input type="radio" name='A1' value='5'> Document Object Model</br>
+                    <input type="radio" name='B1' value='0'> Document Object Module</br>
+                    <input type="radio" name='C1' value='0'> Direct Object Mode</br>
+                </div></br>
+                <div id="Q2">
+                    <p>2. What method is responsible for parsing integers?</p>
+                    <input type="radio" name='A2' value='0'> parseFloat</br>
+                    <input type="radio" name='A2' value='5'> parseInt</br>
+                    <input type="radio" name='A2' value='0'> returnNumber</br>
+                </div></br>
+                <div id="Q3">
+                    <p>3. A mutator method is a method used to control changes to an array. Which of the following is <strong>NOT </strong>a mutator method?</p>
+                    <input type="radio" name='A3' value='0'> push()</br>
+                    <input type="radio" name='A3' value='5'> pop()</br>
+                    <input type="radio" name='A3' value='0'> concat()</br>
+                </div></br>
+                <div id="Q4">
+                        <p>4. Which statement is <strong>FALSE</strong>?</p>
+                        <input type="radio" name='A4' value='0'>Javascript is a anguage that conforms to the ECMAScript specification</br>
+                        <input type="radio" name='A4' value='0'>Javascript is a scripting language.</br>
+                        <input type="radio" name='A4' value='5'>Javascript is a library of JQuery</br>
+                </div></br>
+                <button type="submit" class="btn-success:hover">SUBMIT</button>
+            </form>
+            
         </div>
     </body>
 </html>
