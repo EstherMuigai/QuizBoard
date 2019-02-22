@@ -1,13 +1,34 @@
 body {
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO0a6TegWapDJjZdyP1lCDOSuj9ZZb468gDc6o93GXsGTVb1gW);
+    background-image: url(http://i.imgur.com/6FIkhZa.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover
 }
 
 h1 {
     text-align: center;
-    color: rgb(20, 19, 19);  /* Fallback: assume this color ON TOP of image */
-    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO0a6TegWapDJjZdyP1lCDOSuj9ZZb468gDc6o93GXsGTVb1gW) no-repeat;
+    font-size: 2cm;
+    background-image: url(https://t4.ftcdn.net/jpg/01/78/03/77/500_F_178037740_1AlyXVgSPrahDOIrnOvDIbsWDpSLrdqj.jpg);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.card {
+    background-color: #e9ecef;
+    border-color: black;
+}
+
+.jumbotron {
+    background-color: rgb(140, 139, 168);
+    border-color: black;
+}
+
+#results {
+    margin-top: 2cm;
+}
+
+#details {
+    margin-top: 2cm;
 }
 
 #rules {
