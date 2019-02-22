@@ -2,13 +2,20 @@
 $(document).ready (function(){
     $("div#results").hide();
     $("form#quiz").hide();
+    $("form#proceed").hide();
     $("form#details").submit(function(){
         event.preventDefault();
         $("form#details").hide();
-        $("form#quiz").show();
-        $("form#quiz").submit(function(){
+        var name = $("input#username").val();
+        var theclass = $("input#userclass").val();
+        $("#greeting").text("Hello " + name + " of Class " + theclass);
+        $("form#proceed").show();
+        $("form#proceed").submit(function(){
             event.preventDefault();
-            var name = $("input#username").val();
+            $("form#proceed").hide();
+            $("form#quiz").show();
+            $("form#quiz").submit(function(){
+            event.preventDefault();
             var q1 = parseInt($("input:radio[name=A1]:checked").val());
             var q2 = parseInt($("input:radio[name=A2]:checked").val());
             var q3 = parseInt($("input:radio[name=A3]:checked").val());
@@ -19,6 +26,7 @@ $(document).ready (function(){
             grading(marks);
             });
         });
+    });
 });
 
 //BUSINESS LOGIC
