@@ -36,10 +36,14 @@ var grade = function (num1,num2,num3,num4) {
 
 function grading (total){
 if (total>80) {
+    $("img#passed").show();
     $("#output").text("You have passed");
 } else if (total>50 && total<80) {
+    $("img#fairly").show();
     $("#output").text("You have fairly passed");
 } else if (total<80) {
+    $("img#failed").show();
     $("#output").text("You have failed. Retake");
+    $("button#retake").show();
 }
 };
