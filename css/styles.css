@@ -1,0 +1,24 @@
+body {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO0a6TegWapDJjZdyP1lCDOSuj9ZZb468gDc6o93GXsGTVb1gW);
+}
+
+h1 {
+    text-align: center;
+    color: rgb(20, 19, 19);  /* Fallback: assume this color ON TOP of image */
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO0a6TegWapDJjZdyP1lCDOSuj9ZZb468gDc6o93GXsGTVb1gW) no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#rules {
+    font-style: italic;
+    font-size: 0.4cm;
+    text-align: center;
+    border: 1cm;
+    border-color: black;
+}
+
+#username{
+    width: 7cm;
+}
+
