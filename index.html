@@ -10,29 +10,32 @@
     <body>
         <div class="container">
             <form id="details" class="jumbotron">
-                <div class="row" id="names">
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Your name" id="username" required>
-                    </div>
-                    <div class="col">
+                <div class="row">
+                    <h1>Welcome to JSQuiz.org</h1></br>
+                </div>
+                <div class="row">
+                    <input type="text" class="form-control" placeholder="Your name" id="username" required>
+                </div>
+                <div class="row">
                     <input type="text" class="form-control" placeholder="Your class" id="userclass" required>
-                    </div>
+                </div>
+                <div id="submitdetails">
                     <button type="submit" class="btn-success">SUBMIT</button>
                 </div>
             </form>
-            <form id="proceed" class="jumbotron">
-                    <div class="row">
-                            <img src="img/giphy.gif" alt="waving hi" id="giphy">
-                    </div></br>
-                    <div class="row">
-                        <p id="greeting"></p></br>
-                        <p id="rules"><strong>1. This quiz will test your understanding of the concepts we've learnt in JavaScript </br> 2. The time allocated for this test is 10 minutes. </br> 3. Undertake this quiz independently </br> 4. Finally,</br> ALL THE BEST!</strong></p></br>
+            <div class="col-md-4" id="thecard">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/giphy.gif" class="card-img-top" id="giphy" class="rounded-circle" alt="hello">
+                            <div class="card-body">
+                             <h5 class="card-title" id="greeting"></br></h5>
+                              <p class="card-text">1. This quiz will test your understanding of the concepts we've learnt in JavaScript </br> 2. The time allocated for this test is 10 minutes. </br> 3. Undertake this quiz independently </br> 4. Finally,</br> ALL THE BEST!</p></br>
+                              <form id="proceed">
+                                    <button type="submit" class="btn-success">PROCEED</button>
+                               </form>
+                           </div>
                     </div>
-                    <div class="row">
-                        <button type="submit" class="btn-success">PROCEED</button>
-                    </div>
-            </form>
-            <form id="quiz" class="jumbotron" class="form-group" class="col-md-3">
+            </div>
+            <form id="quiz" class="jumbotron" class="form-group" class="col-md-5">
                     <h1><strong>JS Quiz Board</strong></h1></br>
                 <div id="Q1">
                     <p>1. What does the abbreviation DOM stand for?</p>
