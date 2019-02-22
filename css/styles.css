@@ -2,13 +2,13 @@ body {
     background-image: url(http://i.imgur.com/6FIkhZa.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover
+    background-size: cover;
 }
 
 h1 {
     text-align: center;
-    font-size: 2cm;
-    background-image: url(https://t4.ftcdn.net/jpg/01/78/03/77/500_F_178037740_1AlyXVgSPrahDOIrnOvDIbsWDpSLrdqj.jpg);
+    font-size: 1.5cm;
+    background-image: url(http://i.imgur.com/6FIkhZa.png);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -23,12 +23,36 @@ h1 {
     border-color: black;
 }
 
+#proceed {
+    margin-left: 5cm;
+}
+
+#giphy {
+    width: 4cm;
+    height: 4cm;
+    margin-left:3cm;
+}
+
+#passed {
+    display:none;
+}
+#fairly {
+    display:none;
+}
+#failed {
+    display:none;
+}
+
 #results {
     margin-top: 2cm;
 }
 
 #details {
     margin-top: 2cm;
+}
+
+#greeting {
+    font-size: 1cm;
 }
 
 #rules {
@@ -39,7 +63,7 @@ h1 {
     border-color: black;
 }
 
-#username{
-    width: 7cm;
+.form-control{
+    width: 8cm;
 }
 
