@@ -1,5 +1,5 @@
 body {
-    background-image: url(http://i.imgur.com/6FIkhZa.png);
+    background-image: url(https://i1.wp.com/allhtaccess.info/wp-content/uploads/2018/03/programming.gif?fit=1281%2C716&ssl=1);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -7,39 +7,80 @@ body {
 
 h1 {
     text-align: center;
-    font-size: 1.5cm;
-    background-image: url(http://i.imgur.com/6FIkhZa.png);
+    font-size: 1cm;
+    background-image: url(https://thumbs.gfycat.com/WebbedAgedHorsechestnutleafminer-max-1mb.gif);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.card {
-    background-color: #e9ecef;
-    border-color: black;
+.quiz-background {
+    background-image: url(https://thumbs.gfycat.com/WebbedAgedHorsechestnutleafminer-max-1mb.gif);
+}
+
+.card-text {
+    text-align: center;
+    font-size: 0.4cm;
+    font-style: italic;
+    background-image: url(https://thumbs.dreamstime.com/z/website-html-code-browser-view-white-background-24331527.jpg);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.row {
+    margin: 0.5cm;
 }
 
 .jumbotron {
-    background-color: rgb(140, 139, 168);
+    background-image: linear-gradient(white, rgb(106, 112, 106), white, rgb(106, 112, 106));
     border-color: black;
 }
 
+.col-md-6 {
+    background-color: white;
+}
+
+.card-body {
+    background-color: black;
+    width:10cm;
+}
+
+.card {
+    border: 0;
+}
+
+#thecard {
+    margin-left: 3cm;
+    float: left;
+    margin-top: 1cm;
+    width:10cm;
+    height: 10cm;;
+}
+
 #proceed {
-    margin-left: 5cm;
+    margin-left: 3.2cm;
 }
 
 #giphy {
-    width: 4cm;
-    height: 4cm;
-    margin-left:3cm;
+    height:5cm;
+    width:10cm;
 }
 
 #passed {
+    margin-left: 5cm;
+    height:5cm;
+    width:10cm;
     display:none;
 }
 #fairly {
+    margin-left: 5cm;
+    height:5cm;
+    width:10cm;
     display:none;
 }
 #failed {
+    margin-left: 5cm;
+    height:5cm;
+    width:10cm;
     display:none;
 }
 
@@ -47,18 +88,32 @@ h1 {
     margin-top: 2cm;
 }
 
+#submitdetails {
+    margin-left: 3cm;
+    margin-top: 1cm;
+}
+
 #details {
-    margin-top: 2cm;
+    margin-top: 4cm;
+    background-color: black;
+    background-image: none;
+    width: 10cm;
+    height: 13cm;
+    float: right;
 }
 
 #greeting {
-    font-size: 1cm;
+    text-align: center;
+    font-size: 0.4cm;
+    background-image: url(https://thumbs.dreamstime.com/z/website-html-code-browser-view-white-background-24331527.jpg);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #rules {
     font-style: italic;
     font-size: 0.4cm;
-    text-align: center;
+    text-align: left;
     border: 1cm;
     border-color: black;
 }
@@ -66,4 +121,3 @@ h1 {
 .form-control{
     width: 8cm;
 }
-
