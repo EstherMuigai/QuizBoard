@@ -1,29 +1,30 @@
 //USER INTERFACE LOGIC
 $(document).ready (function(){
     $("div#results").hide();
-    $("form#quiz").hide();
-    $("form#proceed").hide();
+    $("form#quiz").hide(); 
+    $("div#thecard").hide();
     $("form#details").submit(function(){
         event.preventDefault();
         $("form#details").hide();
         var name = $("input#username").val();
         var theclass = $("input#userclass").val();
         $("#greeting").text("Hello " + name + " of Class " + theclass);
-        $("form#proceed").show();
+        $("div#thecard").show();
         $("form#proceed").submit(function(){
             event.preventDefault();
-            $("form#proceed").hide();
-            $("form#quiz").show();
+            $("body").addClass("quiz-background");
+            $("div#thecard").hide();
+            $("form#quiz").show(); 
             $("form#quiz").submit(function(){
-            event.preventDefault();
-            var q1 = parseInt($("input:radio[name=A1]:checked").val());
-            var q2 = parseInt($("input:radio[name=A2]:checked").val());
-            var q3 = parseInt($("input:radio[name=A3]:checked").val());
-            var q4 = parseInt($("input:radio[name=A4]:checked").val());
-            var marks = grade(q1,q2,q3,q4);
-            $("form#quiz").hide();
-            $("div#results").show();
-            grading(marks);
+                event.preventDefault();
+                var q1 = parseInt($("input:radio[name=A1]:checked").val());
+                var q2 = parseInt($("input:radio[name=A2]:checked").val());
+                var q3 = parseInt($("input:radio[name=A3]:checked").val());
+                var q4 = parseInt($("input:radio[name=A4]:checked").val());
+                var marks = grade(q1,q2,q3,q4);
+                $("form#quiz").hide();
+                $("div#results").show();
+                grading(marks);
             });
         });
     });
