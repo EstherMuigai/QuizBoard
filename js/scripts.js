@@ -23,8 +23,16 @@ $(document).ready (function(){
                 var q4 = parseInt($("input:radio[name=A4]:checked").val());
                 var marks = grade(q1,q2,q3,q4);
                 $("form#quiz").hide();
+                $("body").removeClass();
+                $("body").addClass("quiz-background2");
                 $("div#results").show();
                 grading(marks);
+                $("form#quiz2").submit(function(){
+                    $("div#results").hide();
+                    event.preventDefault();
+                    $("form#quiz")[0].reset();
+                    $("form#quiz").show();
+                });
             });
         });
     });
