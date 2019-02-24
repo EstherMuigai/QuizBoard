@@ -8,7 +8,7 @@ $(document).ready (function(){
         $("form#details").hide();
         var name = $("input#username").val();
         var theclass = $("input#userclass").val();
-        $("#greeting").text("Hello " + name + " of Class " + theclass);
+        $("#greeting").text("Hello " + name + ",");
         $("div#thecard").show();
         $("form#proceed").submit(function(){
             event.preventDefault();
@@ -28,10 +28,14 @@ $(document).ready (function(){
                 $("div#results").show();
                 grading(marks);
                 $("form#quiz2").submit(function(){
-                    $("div#results").hide();
                     event.preventDefault();
                     $("form#quiz")[0].reset();
                     $("form#quiz").show();
+                    $("button#sub1").hide();
+                    $("button#sub2").show();
+                    $("img#failed").hide();
+                    $("div#results").hide();
+                    $("button#retake").hide();                    
                 });
             });
         });
@@ -46,11 +50,11 @@ var grade = function (num1,num2,num3,num4) {
 function grading (total){
 if (total>80) {
     $("img#passed").show();
-    $("#output").text("You have passed");
-} else if (total>50 && total<80) {
+    $("#output").text("You have passed!");
+} else if (total>=50 && total<80) {
     $("img#fairly").show();
     $("#output").text("You have fairly passed");
-} else if (total<80) {
+} else if (total<50) {
     $("img#failed").show();
     $("#output").text("You have failed. Retake");
     $("button#retake").show();
