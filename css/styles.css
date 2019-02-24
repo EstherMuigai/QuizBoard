@@ -3,6 +3,8 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: black;
 }
 
 h1 {
@@ -15,6 +17,10 @@ h1 {
 
 .quiz-background {
     background-image: url(https://thumbs.gfycat.com/WebbedAgedHorsechestnutleafminer-max-1mb.gif);
+}
+
+.quiz-background2 {
+    background-color: rgb(2, 2, 2);
 }
 
 .card-text {
@@ -48,16 +54,28 @@ h1 {
     border: 0;
 }
 
+.form-control{
+    width: 8cm;
+    margin-left: 2cm;
+}
+
 #thecard {
     margin-left: 3cm;
     float: left;
     margin-top: 1cm;
     width:10cm;
-    height: 10cm;;
+    height: 10cm;
+    opacity: 0.9;
 }
 
 #proceed {
     margin-left: 3.2cm;
+    opacity: 0.9;
+}
+
+#retake {
+    margin-left: 3.8cm;
+    display: none;
 }
 
 #giphy {
@@ -66,19 +84,16 @@ h1 {
 }
 
 #passed {
-    margin-left: 5cm;
     height:5cm;
     width:10cm;
     display:none;
 }
 #fairly {
-    margin-left: 5cm;
     height:5cm;
     width:10cm;
     display:none;
 }
 #failed {
-    margin-left: 5cm;
     height:5cm;
     width:10cm;
     display:none;
@@ -86,28 +101,41 @@ h1 {
 
 #results {
     margin-top: 2cm;
+    background-color: black;
+    background-image: none;
+    width: 10cm;
+    height: 9cm;
+    padding: 0;
+    margin-right: 0;
+    margin-left: 3cm;
 }
 
 #submitdetails {
-    margin-left: 3cm;
+    margin-left: 5cm;
     margin-top: 1cm;
 }
 
 #details {
-    margin-top: 4cm;
+    margin-top: 3cm;
     background-color: black;
     background-image: none;
-    width: 10cm;
-    height: 13cm;
+    width: 14cm;
+    height: 10cm;
     float: right;
+    opacity:0.9;
 }
 
+#sub2 {
+    display: none;
+}
+
+
 #greeting {
-    text-align: center;
-    font-size: 0.4cm;
-    background-image: url(https://thumbs.dreamstime.com/z/website-html-code-browser-view-white-background-24331527.jpg);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    text-align: left;
+    font-size: 0.5cm;
+    color: green;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 6cm;
 }
 
 #rules {
@@ -118,6 +146,9 @@ h1 {
     border-color: black;
 }
 
-.form-control{
-    width: 8cm;
+#output {
+    text-align: center;
+    font-size: 0.7cm;
+    color: white;
+    margin-top: 1cm;
 }
