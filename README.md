@@ -1,4 +1,4 @@
-**JS QuizBoard**
+**JS QuizBoard**\
 This incorporates lessons learnt at Moringa School in writing Javascript functions, executing JQuery and designing with the bootsrap framework.
 By Esther Muigai
 
