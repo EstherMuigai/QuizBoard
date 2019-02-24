@@ -1,8 +1,8 @@
-**JS QuizBoard**
+**JS QuizBoard**\
 This incorporates lessons learnt at Moringa School in writing Javascript functions, executing JQuery and designing with the bootsrap framework.
 By Esther Muigai
 
-**Description**
+**Description**\
 This project is a culmination of all I have learnt in my first three weeks at Moringa. The project was uploaded on 22/02/2019.
 
 
@@ -23,24 +23,24 @@ This project is a culmination of all I have learnt in my first three weeks at Mo
 | 			          | 			             | 						 		 |
 | GIVEN user retakes the quiz     | WHEN they click to submit        | THEN they receive their retake results    		 |
 
-**Setup/Installation Requirements**
+**Setup/Installation Requirements**\
 1.Open an account on Github online 2.Create a repository for this project 3.Go to this account https://github.com/EstherMuigai/QuizBoard and fork the repository on the link to your own account Install a text editor such as VS Code on your PC Then access your terminal/CLI Initialize git then pull from Github.
 
-**Debugging**
-Follow setup instructions Edit the code and commit to sector branch
+**Debugging**\
+Follow setup instructions Edit the code and commit to sector branch.
 
-**Known Bugs**
+**Known Bugs**\
 Media queries are not yet efficient.
 
-**Technologies Used**
+**Technologies Used**\
 Using HTML and CSS I was able to create a very user friendly site. 
 Linked the JQuery
 
-**Support and contact details**
+**Support and contact details**\
 If you encounter any issues don't hesitate to contact me on this link https://github.com/EstherMuigai/
 
-**MIT License**
-**Copyright (c) [2019] [Esther Muigai]**
+**MIT License**\
+**Copyright (c) [2019] [Esther Muigai]**\
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
