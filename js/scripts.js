@@ -5,10 +5,10 @@ $(document).ready (function(){
     $("div#thecard").hide();
     $("form#details").submit(function(){
         event.preventDefault();
-        $("form#details").hide();
         var name = $("input#username").val();
         var theclass = $("input#userclass").val();
         var thename = name.toUpperCase();
+        $("form#details").hide();
         $("#greeting").text("Hello " + thename + " Class "  + theclass + ":");
         $("div#thecard").show();
         $("form#proceed").submit(function(){
