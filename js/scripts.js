@@ -8,7 +8,8 @@ $(document).ready (function(){
         $("form#details").hide();
         var name = $("input#username").val();
         var theclass = $("input#userclass").val();
-        $("#greeting").text("Hello " + name + ",");
+        var thename = name.toUpperCase();
+        $("#greeting").text("Hello " + thename + " Class "  + theclass + ":");
         $("div#thecard").show();
         $("form#proceed").submit(function(){
             event.preventDefault();
